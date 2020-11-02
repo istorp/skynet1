@@ -35,6 +35,7 @@ namespace Infrastrucure.Data
         public async Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec)
         {
             return await ApplySpecification(spec).ToListAsync();
+            //Test text
         }
         private IQueryable<T> ApplySpecification(ISpecification<T> spec)
         {
